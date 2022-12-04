@@ -1,0 +1,27 @@
+$primaryColor: #654fef;
+$fontSize: 3rem;
+
+@mixin textStyle($color, $bgColor, $border, $milad) {
+  color: $color;
+  background-color: $bgColor;
+  border-radius: $border;
+  padding: $milad;
+}
+
+@mixin font($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+h1 {
+  @include textStyle(black, red, 10px, 40px);
+  @include font(3rem, bold);
+}
+
+h2 {
+  @include textStyle(black, green, 50px, 5px);
+}
+
+p {
+  @include textStyle(black, blue, 4px, 5px);
+}

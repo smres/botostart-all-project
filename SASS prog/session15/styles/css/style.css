@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-5 {
+  width: 50px;
+  background-color: rgb(58, 153, 51);
+  height: 100px;
+  margin: 1rem;
+}
+
+.container-4 {
+  width: 40px;
+  background-color: rgb(58, 153, 51);
+  height: 80px;
+  margin: 1rem;
+}
+
+.container-3 {
+  width: 30px;
+  background-color: rgb(58, 153, 51);
+  height: 60px;
+  margin: 1rem;
+}
+
+.container-2 {
+  width: 20px;
+  background-color: rgb(58, 153, 51);
+  height: 40px;
+  margin: 1rem;
+}
+
+.container-1 {
+  width: 10px;
+  background-color: rgb(58, 153, 51);
+  height: 20px;
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

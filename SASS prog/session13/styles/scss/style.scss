@@ -1,0 +1,65 @@
+@import "variables.scss";
+@import "mixins";
+
+@mixin query($width) {
+  @if ($width == 400px) {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  @else if($width == 800px) {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include textStyle(black, red, 10px, 40px);
+  @include font(3rem, bold);
+  margin-top: (0);
+  @include hoverEffect(rgb(214, 65, 225), rgb(123, 255, 79));
+
+  @include query(400px) {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: yellow;
+  }
+}
+
+h2 {
+  @include textStyle(black, green, 50px, 5px);
+  color: $primaryColor;
+  @include hoverEffect(royalblue, #fff);
+}
+
+// $number: 2;
+
+p {
+  @include textStyle(black, blue, 4px, 5px);
+  @include hoverEffect1();
+
+  @include query(400px) {
+      font-size: 3px !important;
+  }
+  @include query(800px) {
+      font-size: 4rem;
+  }
+
+  // @if ($number == 3) {
+  //   font-size: $fontSize;
+  // }
+  // @else if ($number == 4) {
+  //   font-size: 1.5rem;
+
+  // }@else {
+  //   font-size: 2rem;
+  // }
+}

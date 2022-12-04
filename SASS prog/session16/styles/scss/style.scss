@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@each $element, $color in (container-1: red, container-2: blue, container-3: green) {
+  .#{$element} {
+    color: $color;
+  }
+}

@@ -1,0 +1,24 @@
+@mixin textStyle($color, $bgColor, $border, $milad) {
+  color: $color;
+  background-color: $bgColor;
+  border-radius: $border;
+  padding: $milad;
+}
+
+@mixin font($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+@mixin hoverEffect($bgColor, $color) {
+  &:hover {
+    background-color: $bgColor;
+    color: $color;
+  }
+}
+
+@mixin hoverEffect1() {
+  &:hover {
+    background-color: aqua;
+  }
+}

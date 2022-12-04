@@ -1,0 +1,11 @@
+@mixin textStyle($color, $bgColor, $border, $milad) {
+  color: $color;
+  background-color: $bgColor;
+  border-radius: $border;
+  padding: $milad;
+}
+
+@mixin font($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}

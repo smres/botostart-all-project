@@ -1,0 +1,24 @@
+@import "variables.scss";
+@import "mixins";
+
+h1 {
+  @include textStyle(black, red, 10px, 40px);
+  @include font(3rem, bold);
+  margin-top: 40px;
+  @include hoverEffect(rgb(214, 65, 225), rgb(175, 148, 148));
+}
+
+// h1:hover {
+//   background-color: aqua;
+// }
+
+h2 {
+  @include textStyle(black, green, 50px, 5px);
+  color: $primaryColor;
+  @include hoverEffect(royalblue, #fff);
+}
+
+p {
+  @include textStyle(black, blue, 4px, 5px);
+  @include hoverEffect1();
+}

@@ -1,0 +1,16 @@
+@import "variables.scss";
+@import "mixins";
+
+h1 {
+  @include textStyle(black, red, 10px, 40px);
+  @include font(3rem, bold);
+}
+
+h2 {
+  @include textStyle(black, green, 50px, 5px);
+  color: $primaryColor;
+}
+
+p {
+  @include textStyle(black, blue, 4px, 5px);
+}

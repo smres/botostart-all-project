@@ -1,0 +1,36 @@
+@import "variables.scss";
+@import "mixins";
+
+@mixin query($width) {
+  @if ($width == 400px) {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  @else if($width == 800px) {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 4rem;
+  color: red;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+h2 {
+  @extend .header
+}

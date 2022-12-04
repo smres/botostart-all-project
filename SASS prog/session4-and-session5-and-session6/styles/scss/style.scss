@@ -1,0 +1,11 @@
+$primaryColor: red;
+$fontSize: 3rem;
+h1 {
+    color: $primaryColor;
+}
+h2 {
+    background-color: $primaryColor;
+    color: #fff;
+    font-size: $fontSize;
+  }
+  

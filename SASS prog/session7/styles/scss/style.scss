@@ -1,0 +1,22 @@
+$primaryColor: #654fef;
+$fontSize: 3rem;
+
+.container {
+    background-color: $primaryColor;
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+// ul {
+//     list-style: none;
+// }
+// .container ul a {
+//     text-decoration: none;
+//     color: #fff;
+// }

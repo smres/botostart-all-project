@@ -1,0 +1,27 @@
+// console.log(5 + 8);
+// console.log("milad" + " " + "azami");
+// console.log("4" + 5);
+// console.log(5 - 8);
+// console.log(5 * 8);
+// console.log(20 / 4);
+// console.log(4 ** 2);
+// console.log(5 % 2);
+// let num = 5;
+// // num ++;
+// num --;
+// console.log(num);
+
+let num = 5;
+// num = num + 6;
+// num += 6;
+// num = num - 4;
+// num -= 4;
+// num = num * 2;
+// num *= 2;
+// num = num / 2;
+// num /= 2;
+// num = num % 3;
+num %= 3;
+// num = num ** 2;
+// num **= 2;
+console.log(num);

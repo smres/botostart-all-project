@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-1 {
+  color: red;
+}
+
+.container-2 {
+  color: blue;
+}
+
+.container-3 {
+  color: green;
+}/*# sourceMappingURL=style.css.map */

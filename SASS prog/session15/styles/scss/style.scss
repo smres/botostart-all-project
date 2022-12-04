@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ====== For =======
+// @for $item from 1 through 5 {
+//   .container-#{$item} {
+//     background-color: rebeccapurple;
+//     height: 20px * $item;
+//     margin: 1rem;
+//   }
+// }
+
+// ====== While =======
+$item: 5;
+@while ($item > 0) {
+  .container-#{$item} {
+    width: (10 * $item) + px;
+    background-color: rgb(58, 153, 51);
+    height: 20px * $item;
+    margin: 1rem;
+  }
+
+  $item: $item - 1;
+}
