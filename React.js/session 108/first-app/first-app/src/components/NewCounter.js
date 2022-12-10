@@ -1,30 +1,49 @@
 import React, { useReducer } from "react";
 
-const initialState = {
+const initialize = {
   num1: 0,
+  num2: 0,
 };
+
 const reducer = (state, action) => {
-  switch (action) {
+  switch (action.type) {
     case "Up":
-      return state + 1;
+      return { ...state, num1: state.num1 + action.amount };
     case "Down":
-      return state - 1;
+      return { ...state, num1: state.num1 - action.amount };
+    case "Up2":
+      return { ...state, num2: state.num2 + action.amount };
+    case "Down2":
+      return { ...state, num2: state.num2 - action.amount };
     case "Reset":
-      return initialState;
+      return initialize;
+
     default:
       return state;
   }
 };
 
 const NewCounter = () => {
-  const [number, dispatch] = useReducer(reducer, initialState);
-
+  const [number, dispatch] = useReducer(reducer, initialize);
   return (
     <div>
-      <h1>{number.num1}</h1>
-      <button onClick={() => dispatch("Up")}>Up</button>
-      <button onClick={() => dispatch("Reset")}>Reset</button>
-      <button onClick={() => dispatch("Down")}>Down</button>
+      <div>
+        <h1>Number 1: {number.num1}</h1>
+        <button onClick={() => dispatch({ type: "Up", amount: 5 })}>Up</button>
+        <button onClick={() => dispatch({ type: "Reset" })}>Reset</button>
+        <button onClick={() => dispatch({ type: "Down", amount: 3 })}>
+          Down
+        </button>
+      </div>
+      <div>
+        <h1>Number 2: {number.num2}</h1>
+
+        <button onClick={() => dispatch({ type: "Up2", amount: 1 })}>Up</button>
+        <button onClick={() => dispatch({ type: "Reset" })}>Reset</button>
+        <button onClick={() => dispatch({ type: "Down2", amount: 1 })}>
+          Down
+        </button>
+      </div>
     </div>
   );
 };
