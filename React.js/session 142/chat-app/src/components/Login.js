@@ -1,4 +1,6 @@
 import React from "react";
+import firebase from "firebase/app";
+import { auth } from "../firebase";
 
 // Icons
 import google from "../assets/google.png";
@@ -15,7 +17,12 @@ const Login = () => {
           <span className={styles.typographyLogo}>Matrix-Gram !</span>
         </h2>
 
-        <div className={styles.button}>
+        <div
+          className={styles.button}
+          onClick={() =>
+            auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())
+          }
+        >
           <div className={styles.loginWrapperRadius}>
             <img src={google} alt="google" />
           </div>
