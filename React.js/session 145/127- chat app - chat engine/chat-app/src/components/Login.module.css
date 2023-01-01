@@ -20,31 +20,6 @@
   margin-bottom: 40px;
 }
 
-.typographyLogo {
-  color: rgb(5, 5, 183);
-  font-family: "Lobster", cursive;
-  font-size: larger;
-  background-image: linear-gradient(120deg, #27a0a8, #8b15e0, #f40f31);
-  background-size: 200%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: animated-gradient 5s ease-in-out infinite;
-  min-width: min-content;
-}
-
-@keyframes animated-gradient {
-
-  0%,
-  100% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
 .button {
   display: flex;
   justify-content: center;
