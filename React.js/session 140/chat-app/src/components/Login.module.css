@@ -38,17 +38,7 @@
   background: #07713e;
 }
 
-.button .loginWrapperRadius {
+.button img {
   width: 30px;
-  height: 30px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
   margin-right: 10px;
-}
-
-.button .loginWrapperRadius img {
-  width: 100%;
 }

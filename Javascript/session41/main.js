@@ -1,8 +1,8 @@
 // single selector :
 // const header = document.getElementById("header");
 // header.innerHTML = "Milad"
-// const header = document.querySelector(".text")
-// console.log(header);
+const header = document.querySelector(".text");
+console.log(header);
 
 // ================================
 

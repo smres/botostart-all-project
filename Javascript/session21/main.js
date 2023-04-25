@@ -1,19 +1,19 @@
-// const data = {
-//   id: 1,
-//   name: "Milad",
-//   userName: "bret",
-//   email: "Sincere@april.biz",
-//   address: {
-//     street: "Lulas Light",
-//     suite: "Apt.556",
-//     city: "Gwenborough",
-//     zipcode: "92998-3874",
-//     geo: {
-//       lat: "-37.3159",
-//       lng: "81.1496",
-//     },
-//   },
-// };
+const data = {
+  id: 1,
+  name: "Milad",
+  userName: "bret",
+  email: "Sincere@april.biz",
+  address: {
+    street: "Lulas Light",
+    suite: "Apt.556",
+    city: "Gwenborough",
+    zipcode: "92998-3874",
+    geo: {
+      lat: "-37.3159",
+      lng: "81.1496",
+    },
+  },
+};
 
 // const name = data.name;
 // const street = data.address.street;
@@ -21,8 +21,11 @@
 // const lat = data.address.geo.lat;
 
 // const string = `HI ${name}, You live in ${street},${city}, ${lat}`;
+// console.log(string);
 
 // const { name, email, address } = data;
+// console.log(name, email, address);
+
 // const {
 //   name,
 //   email,
@@ -48,11 +51,11 @@
 // =============================================
 // =============================================
 
-const names = ["Milad","Ali","David"];
+const names = ["Milad", "Ali", "David"];
 // const name1 = names[0]
 // const name2 = names[1]
 // const name3 = names[2]
 // console.log(name3);
 
-const [name1, , name3] = names
-console.log(name1 , name3);
+// const [name1, , name3] = names
+// console.log(name1 , name3);

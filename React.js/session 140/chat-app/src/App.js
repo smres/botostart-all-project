@@ -1,16 +1,12 @@
 import { Switch, Route } from "react-router-dom";
 
 // Components
-import Login from "./components/Login";
+// import Chats from "./components/Chats";
+
+// Contexts;
 
 function App() {
-  return (
-    <div>
-      <Switch>
-        <Route path="/" component={Login} />
-      </Switch>
-    </div>
-  );
+  return <div className="App">App</div>;
 }
 
 export default App;

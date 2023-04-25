@@ -3,11 +3,11 @@ import "firebase/auth";
 
 export const auth = firebase
   .initializeApp({
-    apiKey: "AIzaSyBKFMFDd3y4eceEmVUI32DG56h8KecvW0U",
-    authDomain: "matrixgram-60d7a.firebaseapp.com",
-    projectId: "matrixgram-60d7a",
-    storageBucket: "matrixgram-60d7a.appspot.com",
-    messagingSenderId: "846793903198",
-    appId: "1:846793903198:web:278b909d8e75271c6e78cf",
+    apiKey: "AIzaSyBQzQCwpfQxrMxIoev5LzEvBZqaVv7UMao",
+    authDomain: "matrixgram-86b58.firebaseapp.com",
+    projectId: "matrixgram-86b58",
+    storageBucket: "matrixgram-86b58.appspot.com",
+    messagingSenderId: "421789787270",
+    appId: "1:421789787270:web:7e469bffdbe3dc2ee45d07",
   })
   .auth();

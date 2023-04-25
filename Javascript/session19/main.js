@@ -10,11 +10,9 @@ const userData = {
 };
 
 const userNames = {
-    first: "milad",
-    "second": "Ali"
-  };
-
-  
+  first: "milad",
+  second: "Ali",
+};
 
 // const favorite = "age";
 // console.log(userData["lastName"]);
@@ -31,5 +29,5 @@ const userNames = {
 // delete userData.name;
 // console.log(userData);
 
-const newObject = {...userData, ...userNames}
+const newObject = { ...userData, ...userNames };
 console.log(newObject);

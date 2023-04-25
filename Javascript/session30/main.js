@@ -34,9 +34,9 @@
 const number = prompt("Enter a number");
 for (let i = 1; i <= number; i++) {
   const root = Math.sqrt(i);
+  console.log("all", root);
   if (Math.floor(root) !== root) {
     continue;
   }
   console.log(i);
 }
-
