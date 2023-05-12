@@ -67,6 +67,8 @@ form button:hover {
   min-width: 30%;
   list-style: none;
   border-radius: 10px;
+  overflow-y: auto;
+  max-height: 25rem;
 }
 
 .todo {
@@ -112,39 +114,39 @@ form button:hover {
 }
 
 .completed {
-    text-decoration: line-through;
-    opacity: 0.5;
-  }
+  text-decoration: line-through;
+  opacity: 0.5;
+}
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background-image: none;
-    border-radius: 10px;
-    color: #c4447a;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    width: 12rem;
-  }
-  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  border-radius: 10px;
+  color: #c4447a;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+
 .select {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-  }
-  
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
 .select::after {
-    content: "\25BC";
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    background: #c4447a;
-    cursor: pointer;
-    pointer-events: none;
-  }
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #c4447a;
+  cursor: pointer;
+  pointer-events: none;
+}
