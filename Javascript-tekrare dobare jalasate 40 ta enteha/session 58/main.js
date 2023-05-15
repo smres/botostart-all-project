@@ -1,49 +1,58 @@
-// const clockDiv = document.querySelector(".clock");
-
-// setInterval(clockHandler, 1000);
-
-// let second = 55;
-// function clockHandler() {
-//   const clockHours = new Date();
-//   let hour = clockHours.getHours();
-//   console.log(hour);
-//   let minute = clockHours.getMinutes();
-//     let second = clockHours.getSeconds();
-
-//   if (second === 60) {
-//     second = "0";
-//   }
-//   if (second >= 0 && second <= 9) {
-//     clockDiv.innerText = `${hour} : ${minute} : 0${second} `;
-//   } else {
-//     clockDiv.innerText = `${hour} : ${minute} : ${second} `;
-//   }
+// synchronous vs asynchronous
+// single thread
+// console.log(1);
+// console.log(2);
+// for (let i = 0; i < 1000; i++) {
+//   console.log(i);
+// }
+// console.log(3);
+// ==============================================
+// callback
+// callback Hell
+// console.log("start");
+// function getUserData(callback) {
+//   setTimeout(() => {
+//     console.log("دیتا الان ریترن شده");
+//     callback({ name: "Mohammad", email: "mamali@gmail.com" });
+//   }, 3000);
 // }
 
-// ==================================================================
+// function getUserAge(name, callback) {
+//   setTimeout(() => {
+//     console.log(name);
+//     callback({ age: 24 });
+//   }, 2000);
+// }
 
-function showTime() {
-  const date = new Date();
-  let h = date.getHours();
-  let m = date.getMinutes();
-  let s = date.getSeconds();
-  let session = "AM";
+// const data = getUserData((data) => {
+//   console.log(data);
+//   const age = getUserAge(data.name, age=> {
+//     console.log(age);
+//   });
+//   document.querySelector(".clock").innerText = `${data.name}, ${data.email}`;
+// });
+// console.log("end");
+// ==================================================
 
-  if (h === 0) {
-    h = 12;
-  }
+console.log("new start");
 
-  if (h > 12) {
-    h -= 12;
-    session = "PM";
-  }
-
-  h = h < 10 ? `0${h}` : h;
-  m = m < 10 ? `0${m}` : m;
-  s = s < 10 ? `0${s}` : s;
-
-  let time = `${h}:${m}:${s} ${session}`;
-
-  document.querySelector(".clock").innerText = time;;
+function getUserDataFromServer(callback) {
+  setTimeout(() => {
+    callback(["Mohammad", "mamali@gmail.com"]);
+  }, 3000);
 }
-setInterval(showTime, 1000);
+
+function getUserAgeFromServer(name, callback) {
+  setTimeout(() => {
+    callback([24]);
+  }, 3000);
+}
+
+const data = getUserDataFromServer((data) => {
+  console.log(data);
+  getUserAgeFromServer(data[0], (age) => {
+    console.log(age[0]);
+  });
+});
+
+console.log("new end");
