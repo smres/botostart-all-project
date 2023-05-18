@@ -1,0 +1,3 @@
+browserify run command =
+browserify script.js -o bundle.js
+
