@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  height: 400px;
+}
+.first {
+  background-image: url("./images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.second {
+  background-image: url("./images/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}

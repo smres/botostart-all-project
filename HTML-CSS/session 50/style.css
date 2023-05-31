@@ -1,0 +1,16 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Chango&family=Syne+Mono&display=swap"); */
+
+@font-face {
+  font-family: iransans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/iranyekanwebmediumfanum.woff");
+}
+
+body {
+  font-family: "iransans";
+}
+
+h1 {
+  /* font-family: iransans; */
+}

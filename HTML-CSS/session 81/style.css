@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background: silver;
+  height: 600px;
+  display: flex;
+  /* align-items: flex-end; */
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.child {
+  font-size: 2rem;
+  background: snow;
+  margin: 5px;
+  height: 70px;
+}

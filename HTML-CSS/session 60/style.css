@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+.block {
+  background-color: pink;
+  /* display: inline; */
+  width: 300px;
+  margin: 10px auto;
+}
+
+.inline {
+  background-color: darkorange;
+  /* display: block; */
+  margin: 10px 0;
+}

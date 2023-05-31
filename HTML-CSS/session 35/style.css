@@ -1,0 +1,18 @@
+/* inharitance */
+
+body {
+  color: darkviolet;
+  font-family: monospace;
+}
+
+div {
+  color: dimgray;
+}
+
+p {
+  color: fuchsia;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

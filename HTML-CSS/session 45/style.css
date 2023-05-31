@@ -1,0 +1,15 @@
+/* em */
+/* 1em = 16px */
+/* rem */
+
+html {
+  font-size: 10px;
+}
+
+.first {
+  font-size: 2rem;
+}
+
+.second {
+  font-size: 32px;
+}

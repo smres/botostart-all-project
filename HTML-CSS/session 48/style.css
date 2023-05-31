@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  background: palevioletred;
+  height: 60px;
+}
+
+div {
+  background-color: rebeccapurple;
+  width: 100vw;
+  height: calc(100vh - 60px);
+}

@@ -1,0 +1,13 @@
+div {
+  background-color: darkgoldenrod;
+  color: darkred;
+  width: 200px;
+  border: 2px solid black;
+}
+
+span {
+  color: darksalmon;
+}
+.myText {
+  background-color: darkblue;
+}

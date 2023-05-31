@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header {
+  margin: 0 30px 30px;
+  text-align: center;
+  color: blueviolet;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: brown;
+  background-color: burlywood;
+}
+
+.main-header li {
+  list-style: none;
+}
+
+.main {
+  text-align: center;
+}
+
+section {
+  background-color: chartreuse;
+}
+
+section#introduction {
+  background-color: chocolate;
+}
+
+section h2 {
+  margin: 30px 0;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer li {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer-list {
+  background: salmon;
+  padding: 20px;
+}
+
+footer article:last-child {
+  background-color: seagreen;
+  padding: 20px;
+}
+
+footer article:last-child label {
+  color: white;
+  margin-right: 20px;
+  border: 2px solid red;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+footer article:last-child label:hover {
+  border-color: teal;
+}

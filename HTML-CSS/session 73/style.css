@@ -1,0 +1,52 @@
+/* pseudo element */
+p {
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+/* 
+p::before {
+  content: "Hi ";
+  color: brown;
+  font-size: 2rem;
+  background: rgba(0, 255, 0, 0.5);
+  width: 10rem;
+  height: 80px;
+  display: inline-block;
+  position: absolute;
+  left: 0.5rem;
+  z-index: -1 !important;
+} */
+
+/* p::before {
+  content: "";
+  color: brown;
+  font-size: 2rem;
+  background: rgba(0, 255, 0, 0.5);
+  width: 10rem;
+  height: 10px;
+  display: block;
+} */
+
+p::before {
+  content: "";
+  background: url(./A\ shadow\ of\ a\ y\ 0.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+p::after {
+  content: "";
+  color: brown;
+  font-size: 2rem;
+  background: rgba(0, 255, 0, 0.5);
+  /* width: 10rem; */
+  height: 10px;
+  display: block;
+}

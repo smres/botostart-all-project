@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  width: 100%;
+  color: blue;
+  background-color: red;
+  font-size: 2rem;
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  div {
+    width: 300px;
+    color: seagreen;
+    background-color: fuchsia;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  div {
+    width: 470px;
+    background-color: gold;
+  }
+  p {
+    color: green;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  div {
+    width: 760px;
+    background-color: lawngreen;
+  }
+  p {
+    color: lightblue;
+  }
+}
