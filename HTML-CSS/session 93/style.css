@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+.first {
+  background-color: salmon;
+  transform: skew(40deg, 15deg);
+  border-bottom: 2px solid black;
+}
+.second {
+  background-color: seagreen;
+  transform: scale(0.3, 0.3);
+}
+.third {
+  background-color: slateblue;
+  transform: scaleY(0.5);
+}

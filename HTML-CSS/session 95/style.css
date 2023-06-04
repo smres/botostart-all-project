@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  background: salmon;
+  width: 80px;
+  margin: 10px;
+  transition: all 2s ease-out;
+}
+
+/* .ease {
+  transition-timing-function: ease;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+} */
+
+.ease:hover {
+  width: 500px;
+}
+.linear:hover {
+  transform: translateX(100px);
+}

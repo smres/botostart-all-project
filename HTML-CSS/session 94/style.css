@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+.first {
+  background-color: salmon;
+  border-bottom: 2px solid black;
+  transition: all 0.5s ease;
+}
+.first:hover {
+  background-color: red;
+}
+.second {
+  background-color: seagreen;
+}
+.third {
+  background-color: slateblue;
+  transition: all 1s;
+}
+.third:hover {
+  background-color: red;
+  border-radius: 20px;
+}
