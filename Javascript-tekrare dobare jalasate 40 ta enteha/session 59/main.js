@@ -29,9 +29,9 @@ function getUserAge(name) {
 }
 getUserData().then((data) => {
   console.log(data);
-  getUserAge(data.name).then(age => {
+  getUserAge(data.name).then((age) => {
     console.log(age);
-  })
+  });
 });
 console.log("end");
 // ==================================================
@@ -51,3 +51,16 @@ console.log("end");
 //   })
 //   .catch((err) => console.log(err));
 // console.log("end");
+// =====================================================
+// var promise = new Promise((resolve, reject) => {
+//   var str = "7learn.com";
+//   var site = "7learn.com";
+//   if (str === site) {
+//     resolve({ name: "mamali" });
+//   } else {
+//     reject("Failed shod baba");
+//   }
+// });
+// promise
+//   .then((success) => console.log(`${success.name} Promise is successfully`))
+//   .catch((failed) => console.log(`${failed}`));
